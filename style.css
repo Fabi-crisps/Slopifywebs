@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Noto Serif JP", sans-serif;
+
+}
+
+html {
+    font-size: 62.5%
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(245, 64, 191), rgb(239, 170, 248));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 35rem;
+    height: 70rem;
+    background: linear-gradient(to right, rgb(245, 64, 19), rgb(239, 170, 248));
+    box-shadow: 0 1rem 5rem rgba(241, 177, 236, 0.4);
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+}
+
+.player-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-btn {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid rgb(134, 78, 130);
+    border-radius: 50%;
+    background-color: rgba(243, 137, 213);
+    color: rgb(139, 75, 52);
+    box-shadow:
+        0.5rem 0.5rem 2rem -1rem rgba(144, 220, 243),
+        -0.4rem -0.4rem 2rem -1rem rgba(241, 158, 237);
+    cursor: pointer;
+}
+
+.player-btn:active {
+    transform: translateY(0.2rem);
+}
+
+.player-top span {
+    font-size: 1.4rem;
+    color: black
+}
+
+.player-body {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-sound {
+    width: 18rem;
+    height: 18rem;
+    border: 0.5rem solid rgb(109, 82, 107);
+    border-radius: 50%;
+    box-shadow:
+        0.6rem 0.6rem 4rem -0.1rem rgb(47, 48, 48),
+        -0.6rem -0.6rem 4rem -0.1rem rgb(177, 145, 175);
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvHvezi9CzBWBmMcIYdKsP1Yi1egVVUCA-w&s);
+}
+
+.song-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-name {
+    font-size: 2rem;
+    font-weight: 300;
+    color: bisque;
+}
+
+.song-artist {
+    font-size: 1.2rem;
+    color: aquamarine;
+}
+
+.song-info {
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(175, 247, 223), rgb(174, 237, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.song-time {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(109, 82, 107);
+    cursor: pointer;
+    position: relative;
+}
+
+.song-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(240, 120, 130), rgb(225, 171, 247));
+    border-radius: 0.5rem;
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.time span {
+    font-size: 1.2rem;
+    color: blueviolet;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-pause {
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(to right, rgb(165, 242, 245), rgb(232, 167, 248));
+    color: rgb(88, 14, 172);
+    box-shadow:
+        0.5rem 0.5rem 2rem -0.1rem rgb(47, 48, 48),
+        -0.7rem -0.7rem 2rem -0.1rem rgb(177, 145, 175);
+}
+
+.player-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.player-footer i {
+    font-size: 1.8rem;
+    color: rgb(31, 82, 224);
+}
+
+.player-footer span {
+    font-size: 1.2rem;
+    color: rgb(31, 82, 224);
+}
